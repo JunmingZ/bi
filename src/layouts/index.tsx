@@ -1,21 +1,15 @@
-import { Link, Outlet } from 'umi';
-import styles from './index.less';
+import {Outlet} from 'umi';
+import {useTranslation} from "react-i18next";
+
 
 export default function Layout() {
-  return (
-    <div className={styles.navs}>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/docs">Docs</Link>
-        </li>
-        <li>
-          <a href="https://github.com/umijs/umi">Github</a>
-        </li>
-      </ul>
-      <Outlet />
-    </div>
-  );
+    const { t } = useTranslation();
+
+    return (
+        <>
+            {t('global.copy')}
+            <Outlet></Outlet>
+        </>
+    );
 }
+

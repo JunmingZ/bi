@@ -9,6 +9,10 @@
     "start": "npm run dev"
   },
   "dependencies": {
+    "antd": "^5.4.3",
+    "i18next": "^22.4.15",
+    "i18next-browser-languagedetector": "^7.0.1",
+    "react-i18next": "^12.2.0",
     "umi": "^4.0.65"
   },
   "devDependencies": {
