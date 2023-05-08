@@ -1,11 +1,14 @@
 import {createGlobalStyle} from "styled-components";
-import {FONT_FAMILY, FONT_SIZE_BODY} from "@/styles/StyleConstants";
+import {FONT_FAMILY, FONT_SIZE_BODY, WHITE} from "@/styles/StyleConstants";
 
 export const Base = createGlobalStyle`
   body {
     font-family: ${FONT_FAMILY};
     font-size: ${FONT_SIZE_BODY};
-    background-color: ${p => p.theme.bodyBackground};
+    background-color: ${p => {
+      console.log(p?.theme)
+      return p?.theme?.bodyBackground || WHITE
+    }};
 
     h1, h2, h3, h4, h5, h6 {
       margin: 0;
