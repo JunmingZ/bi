@@ -18,7 +18,7 @@ rejectedErrorHandlerMiddleware.startListening({
         if (action?.payload?.message) {
             message.error(action?.payload?.message);
         } else if (action?.error) {
-            message.error((action as any)?.error?.message);
+            message.error(action?.error?.message);
         }
         console.error(`Redux Rejection Error | `, action);
     }

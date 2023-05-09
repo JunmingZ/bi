@@ -19,6 +19,9 @@ dependencies:
   i18next-browser-languagedetector:
     specifier: ^7.0.1
     version: 7.0.1
+  polished:
+    specifier: ^4.2.2
+    version: 4.2.2
   react-i18next:
     specifier: ^12.2.0
     version: 12.2.0(i18next@22.4.15)(react-dom@18.1.0)(react@18.1.0)
@@ -5960,17 +5963,24 @@ packages:
     dev: false
 
   /pirates@4.0.5:
-    resolution: {integrity: sha512-8V9+HQPupnaXMA23c5hvl69zXvTwTzyAYasnkb0Tts4XvO4CliqONMOnvlq26rkhLC3nWDFBJf73LU1e1VZLaQ==}
-    engines: {node: '>= 6'}
+    resolution: { integrity: sha512-8V9+HQPupnaXMA23c5hvl69zXvTwTzyAYasnkb0Tts4XvO4CliqONMOnvlq26rkhLC3nWDFBJf73LU1e1VZLaQ== }
+    engines: { node: '>= 6' }
     dev: false
 
   /point-in-polygon@1.1.0:
-    resolution: {integrity: sha512-3ojrFwjnnw8Q9242TzgXuTD+eKiutbzyslcq1ydfu82Db2y+Ogbmyrkpv0Hgj31qwT3lbS9+QAAO/pIQM35XRw==}
+    resolution: { integrity: sha512-3ojrFwjnnw8Q9242TzgXuTD+eKiutbzyslcq1ydfu82Db2y+Ogbmyrkpv0Hgj31qwT3lbS9+QAAO/pIQM35XRw== }
+    dev: false
+
+  /polished@4.2.2:
+    resolution: { integrity: sha512-Sz2Lkdxz6F2Pgnpi9U5Ng/WdWAUZxmHrNPoVlm3aAemxoy2Qy7LGjQg4uf8qKelDAUW94F4np3iH2YPf2qefcQ== }
+    engines: { node: '>=10' }
+    dependencies:
+      '@babel/runtime': 7.21.0
     dev: false
 
   /postcss-attribute-case-insensitive@5.0.2(postcss@8.4.22):
-    resolution: {integrity: sha512-XIidXV8fDr0kKt28vqki84fRK8VW8eTuIa4PChv2MqKuT6C9UjmSKzen6KaWhWEoYvwxFCa7n/tC1SZ3tyq4SQ==}
-    engines: {node: ^12 || ^14 || >=16}
+    resolution: { integrity: sha512-XIidXV8fDr0kKt28vqki84fRK8VW8eTuIa4PChv2MqKuT6C9UjmSKzen6KaWhWEoYvwxFCa7n/tC1SZ3tyq4SQ== }
+    engines: { node: ^12 || ^14 || >=16 }
     peerDependencies:
       postcss: ^8.2
     dependencies:
