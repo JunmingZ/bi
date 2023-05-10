@@ -3,6 +3,7 @@ import '@/locales/i18n'
 import {Provider} from 'react-redux';
 import {store} from "@/redux/store";
 import React, {ReactNode} from "react";
+import {ThemeProvider} from "@/styles/theme/ThemeProvider";
 
 const ReduxProvider = (props: any) => (
   <Provider store={store} {...props} ></Provider>
@@ -13,9 +14,9 @@ const ReduxProvider = (props: any) => (
 export function rootContainer(container: ReactNode[], opts: any) {
   return (
     <ReduxProvider store={store} {...opts}>
-      {/*<ThemeProvider theme={}>*/}
-      {container}
-      {/*</ThemeProvider>*/}
+      <ThemeProvider>
+        {container}
+      </ThemeProvider>
     </ReduxProvider>
   )
 }
